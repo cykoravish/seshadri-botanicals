@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import { Leaf } from "lucide-react";
 
-const POLICY_LINKS = ["Privacy Policy", "Shipping Policy", "Terms & Conditions", "Refund Policy"];
+const POLICY_LINKS = [
+  { label: "Privacy Policy", to: "/privacy-policy" },
+  { label: "Accessibility Statement", to: "/accessibility-statement" },
+  { label: "Shipping Policy", to: "/shipping-policy" },
+  { label: "Terms & Conditions", to: "/terms-conditions" },
+  { label: "Refund Policy", to: "/refund-policy" },
+];
 
+// lucide-react no longer ships brand/social marks, so these are hand-drawn
+// minimal glyphs kept intentionally simple to match the rest of the icon set.
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
@@ -12,6 +20,7 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
@@ -19,6 +28,7 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
@@ -33,7 +43,7 @@ function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Footer() {
   return (
-   <footer className="bg-brand-dark text-brand-cream">
+    <footer className="bg-brand-dark text-brand-cream">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -41,18 +51,30 @@ export default function Footer() {
               <Leaf className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
               Seshadri Botanicals
             </Link>
-            <p className="mt-3 text-sm text-brand-cream/75">Nature&rsquo;s Purity. Global Quality. Trusted Worldwide.</p>
+            <p className="mt-3 text-sm text-brand-cream/75">
+              Nature&rsquo;s Purity. Global Quality. Trusted Worldwide.
+            </p>
             <div className="mt-4 flex gap-4">
-              <a href="#" aria-label="Instagram" className="text-brand-cream/70 hover:text-brand-cream"><InstagramIcon className="h-5 w-5" /></a>
-              <a href="#" aria-label="Facebook" className="text-brand-cream/70 hover:text-brand-cream"><FacebookIcon className="h-5 w-5" /></a>
-              <a href="#" aria-label="LinkedIn" className="text-brand-cream/70 hover:text-brand-cream"><LinkedinIcon className="h-5 w-5" /></a>
+              <a href="#" aria-label="Instagram" className="text-brand-cream/70 hover:text-brand-cream">
+                <InstagramIcon className="h-5 w-5" />
+              </a>
+              <a href="#" aria-label="Facebook" className="text-brand-cream/70 hover:text-brand-cream">
+                <FacebookIcon className="h-5 w-5" />
+              </a>
+              <a href="#" aria-label="LinkedIn" className="text-brand-cream/70 hover:text-brand-cream">
+                <LinkedinIcon className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Contact</p>
-            <ul className="mt-3 flex flex-col gap-2 text-sm">
-              <li><a href="mailto:info@seshadribotanicals.com" className="hover:underline">info@seshadribotanicals.com</a></li>
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/85">
+              <li>
+                <a href="mailto:info@seshadribotanicals.com" className="hover:underline">
+                  info@seshadribotanicals.com
+                </a>
+              </li>
               <li>+91 XXXXX XXXXX</li>
               <li>India</li>
             </ul>
@@ -60,7 +82,7 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Explore</p>
-            <ul className="mt-3 flex flex-col gap-2 text-sm">
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/85">
               <li><Link to="/shop" className="hover:underline">Shop All</Link></li>
               <li><Link to="/about" className="hover:underline">About</Link></li>
               <li><Link to="/contact" className="hover:underline">Contact</Link></li>
@@ -70,7 +92,13 @@ export default function Footer() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Policies</p>
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/75">
-              {POLICY_LINKS.map((label) => <li key={label}>{label}</li>)}
+              {POLICY_LINKS.map((policy) => (
+                <li key={policy.to}>
+                  <Link to={policy.to} className="hover:underline">
+                    {policy.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
