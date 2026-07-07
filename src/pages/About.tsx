@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Sprout, Target, Eye, ShieldCheck, Leaf, Lightbulb, Users } from "lucide-react";
+import aboutHero from "../assets/images/about-hero.webp";
 
 const VALUES = [
   {
@@ -75,7 +76,7 @@ export default function About() {
             </Link>
           </div>
           <img
-            src="https://static.wixstatic.com/media/88aac0_e58ff8af5dcd4f7586f1a3e78204ad71~mv2.png"
+            src={aboutHero}
             alt="Seshadri Botanicals — botanical ingredients and natural products"
             className="aspect-4/3 w-full rounded-xl object-cover"
             loading="eager"
@@ -147,10 +148,10 @@ export default function About() {
       </section>
 
       {/* Global presence */}
-      <section className="bg-brand-olive py-16 text-brand-dark sm:py-20">
+      <section className="bg-brand-dark py-16 text-brand-cream sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-medium sm:text-4xl">Our Global Presence</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-brand-dark/80">
+        <p className="mx-auto mt-4 max-w-2xl text-brand-cream/80">
             We proudly supply botanical ingredients, specialty chemicals and
             dehydrated foods to businesses across international markets.
           </p>
@@ -158,7 +159,7 @@ export default function About() {
             {REGIONS.map((region) => (
               <span
                 key={region}
-                className="rounded-full border border-brand-dark/20 bg-brand-cream/40 px-4 py-2 text-sm font-medium"
+               className="rounded-full border border-brand-cream/20 bg-white/10 px-4 py-2 text-sm font-medium"
               >
                 {region}
               </span>

@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Mail, Clock } from "lucide-react";
+import contactChamomile from "../assets/images/contact-chamomile.webp";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
@@ -12,7 +13,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-brand-dark py-16 text-brand-cream sm:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:gap-14 lg:px-8">
-        <img src="https://static.wixstatic.com/media/11062b_dbd962984a33469dbd8fe4bcace11a2bf000.jpg" alt="Chamomile flowers, close up" className="aspect-4/3 w-full rounded-xl object-cover md:aspect-auto md:h-full" loading="lazy" />
+        <img src={contactChamomile} alt="Chamomile flowers, close up" className="aspect-4/3 w-full rounded-xl object-cover md:aspect-auto md:h-full" loading="lazy" />
         <div>
           <h2 className="font-display text-3xl font-medium sm:text-4xl">Connect with Us</h2>
           <p className="mt-3 max-w-md text-brand-cream/75">

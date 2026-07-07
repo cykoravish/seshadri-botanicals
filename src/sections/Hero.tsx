@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import hero1 from "../assets/images/hero-1.webp";
+import hero2 from "../assets/images/hero-2.webp";
+import hero3 from "../assets/images/hero-3.webp";
+import hero4 from "../assets/images/hero-4.webp";
 
 export default function Hero() {
   return (
@@ -27,10 +31,10 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-3 px-4 pb-16 sm:grid-cols-4 sm:gap-4 sm:px-6 lg:px-8">
-        <img src="https://static.wixstatic.com/media/88aac0_12ab8c8f327844229589668bfa0f1b29~mv2.png" alt="Essential oil being poured, macro shot" className="aspect-3/4 w-full rounded-xl object-cover" loading="eager" />
-        <img src="https://static.wixstatic.com/media/88aac0_c87de1a7946048d4bed7a16475aefd2e~mv2.png" alt="Lavender essential oil bottle on a stand" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
-        <img src="https://static.wixstatic.com/media/88aac0_c4a36f57e8954f34a233daaa8c4ba906~mv2.png" alt="Essential oil bottle with citrus and rosemary" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
-        <img src="https://static.wixstatic.com/media/88aac0_2bdde78ca21a42e0918af3ff5089b915~mv2.png" alt="Hand holding an essential oil bottle" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
+        <img src={hero1} alt="Essential oil being poured, macro shot" className="aspect-3/4 w-full rounded-xl object-cover" loading="eager" />
+        <img src={hero2} alt="Lavender essential oil bottle on a stand" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
+        <img src={hero3} alt="Essential oil bottle with citrus and rosemary" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
+        <img src={hero4} alt="Hand holding an essential oil bottle" className="aspect-3/4 w-full rounded-xl object-cover" loading="lazy" />
       </div>
     </section>
   );

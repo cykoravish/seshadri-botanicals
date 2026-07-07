@@ -1,4 +1,8 @@
 import { Award, Leaf as LeafIcon, Factory, Globe2, Boxes, HeartHandshake } from "lucide-react";
+import whyPartner1 from "../assets/images/why-partner-1.webp";
+import whyPartner2 from "../assets/images/why-partner-2.webp";
+import whyPartner3 from "../assets/images/why-partner-3.webp";
+import whyPartner4 from "../assets/images/why-partner-4.webp";
 
 const FEATURES = [
   { icon: Award, title: "Premium Quality", description: "Carefully selected raw materials and advanced extraction techniques in every batch." },
@@ -16,12 +20,12 @@ export default function WhyPartner() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 grid grid-cols-2 gap-4 lg:order-1">
             <div className="flex flex-col gap-4">
-              <img src="https://static.wixstatic.com/media/88aac0_18785fd3a3a9463fb117c03b699baf15~mv2.png" alt="Hands preparing botanical ingredients with mortar and pestle" className="aspect-4/5 w-full rounded-xl object-cover" loading="lazy" />
-              <img src="https://static.wixstatic.com/media/88aac0_5e5c32ce94bd4bcab5274e5b76d570fa~mv2.png" alt="Oil being dropped into a bowl" className="aspect-square w-full rounded-xl object-cover" loading="lazy" />
+              <img src={whyPartner1} alt="Hands preparing botanical ingredients with mortar and pestle" className="aspect-4/5 w-full rounded-xl object-cover" loading="lazy" />
+              <img src={whyPartner2} alt="Oil being dropped into a bowl" className="aspect-square w-full rounded-xl object-cover" loading="lazy" />
             </div>
             <div className="flex flex-col gap-4 pt-8">
-              <img src="https://static.wixstatic.com/media/88aac0_b1f7cefc60304f65b8230e8ecedd620b~mv2.png" alt="Botanical ingredient detail shot" className="aspect-square w-full rounded-xl object-cover" loading="lazy" />
-              <img src="https://static.wixstatic.com/media/88aac0_20854400971b40a787833958e41706fc~mv2.png" alt="Lavender essential oil bottle styled with fresh sprigs" className="aspect-4/5 w-full rounded-xl object-cover" loading="lazy" />
+              <img src={whyPartner3} alt="Botanical ingredient detail shot" className="aspect-square w-full rounded-xl object-cover" loading="lazy" />
+              <img src={whyPartner4} alt="Lavender essential oil bottle styled with fresh sprigs" className="aspect-4/5 w-full rounded-xl object-cover" loading="lazy" />
             </div>
           </div>
 

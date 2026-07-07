@@ -1,3 +1,5 @@
+import exclusiveDeals from "../assets/images/exclusive-deals.webp";
+
 export default function ExclusiveDeals() {
   return (
     <section className="bg-brand-cream px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8">
@@ -14,7 +16,7 @@ export default function ExclusiveDeals() {
             Request Bulk Pricing
           </a>
         </div>
-        <img src="https://static.wixstatic.com/media/11062b_f13926808e3446af803f36be1301c945~mv2.jpg" alt="Amber essential oil bottle, editorial styling" className="min-h-64 w-full object-cover sm:min-h-full" loading="lazy" />
+        <img src={exclusiveDeals} alt="Amber essential oil bottle, editorial styling" className="min-h-64 w-full object-cover sm:min-h-full" loading="lazy" />
       </div>
     </section>
   );
