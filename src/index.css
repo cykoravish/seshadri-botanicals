@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors — extracted from the client's existing site */
+  --color-brand-dark: #06201d;      /* deep forest green — primary */
+  --color-brand-dark-light: #0d2f29; /* hover/lighter tint of primary */
+  --color-brand-olive: #828c51;      /* sage/olive — secondary accent */
+  --color-brand-olive-dark: #6c7442; /* olive hover/active */
+  --color-brand-cream: #fefee3;      /* ivory — section backgrounds */
+  --color-brand-gray: #d9d9d9;       /* muted borders/dividers */
+  --color-brand-sand: #f2e3d5;       /* warm sand tint used as a transition band */
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+
+  /* Visible focus ring everywhere — accessibility floor */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-olive);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
