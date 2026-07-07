@@ -18,10 +18,17 @@ export default function Header() {
     }`;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-brand-dark/95 backdrop-blur supports-backdrop-blur:bg-brand-dark/80">
+    <header className="sticky top-0 z-50 relative border-b border-white/10 bg-brand-dark/95 backdrop-blur supports-backdrop-blur:bg-brand-dark/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-cream">
-          <Leaf className="h-5 w-5 text-brand-olive" strokeWidth={1.75} aria-hidden="true" />
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-cream"
+        >
+          <Leaf
+            className="h-5 w-5 text-brand-olive"
+            strokeWidth={1.75}
+            aria-hidden="true"
+          />
           Seshadri Botanicals
         </Link>
 
@@ -52,24 +59,55 @@ export default function Header() {
         </button>
       </div>
 
-      {open && (
-        <nav id="mobile-menu" aria-label="Primary" className="border-t border-white/10 bg-brand-dark px-4 pb-6 pt-2 md:hidden">
+      <div
+        id="mobile-menu"
+        className={`absolute left-0 right-0 top-full grid overflow-hidden bg-brand-dark shadow-lg transition-all duration-300 ease-in-out md:hidden ${
+          open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <nav
+          aria-label="Primary"
+          className="overflow-hidden border-t border-white/10 px-4 pb-6 pt-2"
+        >
           <ul className="flex flex-col gap-1">
-            {NAV_LINKS.map((link) => (
-              <li key={link.to}>
-                <NavLink to={link.to} onClick={() => setOpen(false)} className="block rounded-md px-2 py-3 text-brand-cream/90 hover:bg-white/5">
+            {NAV_LINKS.map((link, i) => (
+              <li
+                key={link.to}
+                className={`transition-all duration-300 ease-out ${
+                  open
+                    ? "translate-y-0 opacity-100"
+                    : "-translate-y-1 opacity-0"
+                }`}
+                style={{ transitionDelay: open ? `${i * 50}ms` : "0ms" }}
+              >
+                <NavLink
+                  to={link.to}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-md px-2 py-3 text-brand-cream/90 hover:bg-white/5"
+                >
                   {link.label}
                 </NavLink>
               </li>
             ))}
-            <li className="mt-2">
-              <Link to="/contact" onClick={() => setOpen(false)} className="block rounded-full bg-brand-olive px-4 py-3 text-center font-medium text-brand-dark">
+            <li
+              className={`mt-2 transition-all duration-300 ease-out ${
+                open ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
+              }`}
+              style={{
+                transitionDelay: open ? `${NAV_LINKS.length * 50}ms` : "0ms",
+              }}
+            >
+              <Link
+                to="/contact"
+                onClick={() => setOpen(false)}
+                className="block rounded-full bg-brand-olive px-4 py-3 text-center font-medium text-brand-dark"
+              >
                 Get a Quote
               </Link>
             </li>
           </ul>
         </nav>
-      )}
+      </div>
     </header>
   );
 }
