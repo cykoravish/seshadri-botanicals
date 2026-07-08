@@ -20,12 +20,12 @@ export default function Shop() {
 
   return (
     <>
-      <section className="bg-brand-dark px-4 py-16 text-center text-brand-cream sm:px-6 sm:py-20 lg:px-8">
+      <section className="bg-brand-sage px-4 py-16 text-center text-brand-dark sm:px-6 sm:py-20 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-olive">Our Product Range</p>
         <h1 className="mx-auto mt-4 max-w-2xl font-display text-4xl font-medium sm:text-5xl">
           Shop All Products
         </h1>
-        <p className="mx-auto mt-4 max-w-xl text-brand-cream/75">
+        <p className="mx-auto mt-4 max-w-xl text-brand-dark/70">
           Browse our full catalogue across essential oils &amp; botanicals,
           specialty chemicals, and dehydrated foods. All products are
           available for bulk, wholesale and private-label supply.
@@ -52,7 +52,7 @@ export default function Shop() {
                   onKeyDown={handleKeyDown}
                   className={`rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${
                     isActive
-                      ? "bg-brand-dark text-brand-cream"
+                      ? "bg-brand-olive text-brand-cream"
                       : "bg-white/60 text-brand-dark/70 hover:bg-white"
                   }`}
                 >

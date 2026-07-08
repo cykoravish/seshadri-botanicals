@@ -9,8 +9,6 @@ const POLICY_LINKS = [
   { label: "Refund Policy", to: "/refund-policy" },
 ];
 
-// lucide-react no longer ships brand/social marks, so these are hand-drawn
-// minimal glyphs kept intentionally simple to match the rest of the icon set.
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
@@ -43,7 +41,7 @@ function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-brand-cream">
+    <footer className="bg-brand-sage-dark text-brand-dark">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -51,25 +49,25 @@ export default function Footer() {
               <Leaf className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
               Seshadri Botanicals
             </Link>
-            <p className="mt-3 text-sm text-brand-cream/75">
+            <p className="mt-3 text-sm text-brand-dark/75">
               Nature&rsquo;s Purity. Global Quality. Trusted Worldwide.
             </p>
             <div className="mt-4 flex gap-4">
-              <a href="#" aria-label="Instagram" className="text-brand-cream/70 hover:text-brand-cream">
+              <a href="#" aria-label="Instagram" className="text-brand-dark/70 hover:text-brand-dark">
                 <InstagramIcon className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Facebook" className="text-brand-cream/70 hover:text-brand-cream">
+              <a href="#" aria-label="Facebook" className="text-brand-dark/70 hover:text-brand-dark">
                 <FacebookIcon className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-brand-cream/70 hover:text-brand-cream">
+              <a href="#" aria-label="LinkedIn" className="text-brand-dark/70 hover:text-brand-dark">
                 <LinkedinIcon className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Contact</p>
-            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/85">
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Contact</p>
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
               <li>
                 <a href="mailto:info@seshadribotanicals.com" className="hover:underline">
                   info@seshadribotanicals.com
@@ -81,8 +79,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Explore</p>
-            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/85">
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Explore</p>
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
               <li><Link to="/shop" className="hover:underline">Shop All</Link></li>
               <li><Link to="/about" className="hover:underline">About</Link></li>
               <li><Link to="/contact" className="hover:underline">Contact</Link></li>
@@ -90,8 +88,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-cream/60">Policies</p>
-            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-cream/75">
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Policies</p>
+            <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/75">
               {POLICY_LINKS.map((policy) => (
                 <li key={policy.to}>
                   <Link to={policy.to} className="hover:underline">
@@ -103,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-brand-cream/15 pt-6 text-xs text-brand-cream/60">
+        <div className="mt-10 border-t border-brand-dark/15 pt-6 text-xs text-brand-dark/60">
           &copy; {new Date().getFullYear()} Seshadri Botanicals. All rights reserved.
         </div>
       </div>

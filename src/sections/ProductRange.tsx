@@ -50,14 +50,14 @@ export default function ProductRange() {
   return (
     <section
       id="products"
-      className="bg-brand-dark py-16 text-brand-cream sm:py-20"
+     className="bg-brand-cream py-16 text-brand-dark sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-medium sm:text-4xl">
             Our Product Range
           </h2>
-          <p className="mt-3 text-brand-cream/75">
+    <p className="mt-3 text-brand-dark/70">
             Three specialized divisions, one commitment to purity and quality.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function ProductRange() {
             <Link
               key={division.title}
               to="/shop"
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-brand-olive/50"
+             className="rounded-2xl border border-brand-dark/10 bg-white p-6 shadow-sm transition-colors hover:border-brand-olive/50"
             >
               <division.icon
                 className="h-7 w-7 text-brand-olive"
@@ -77,7 +77,7 @@ export default function ProductRange() {
               <h3 className="mt-4 font-display text-xl font-medium">
                 {division.title}
               </h3>
-              <p className="mt-2 text-sm text-brand-cream/70">
+      <p className="mt-2 text-sm text-brand-dark/70">
                 {division.description}
               </p>
             </Link>
@@ -91,7 +91,7 @@ export default function ProductRange() {
             </h3>
             <Link
               to="/shop"
-              className="shrink-0 text-sm font-medium text-brand-olive hover:text-brand-cream"
+          className="shrink-0 text-sm font-medium text-brand-olive hover:text-brand-olive-dark"
             >
               Shop all &rarr;
             </Link>
@@ -115,7 +115,7 @@ export default function ProductRange() {
                   />
                 )}
                 <p className="mt-3 text-sm font-medium">{product.name}</p>
-                <p className="text-xs text-brand-cream/60">{product.note}</p>
+              <p className="text-xs text-brand-dark/60">{product.note}</p>
               </div>
             ))}
           </div>

@@ -6,7 +6,7 @@ import hero4 from "../assets/images/hero-4.webp";
 
 export default function Hero() {
   return (
-    <section id="top" className="bg-brand-dark text-brand-cream">
+  <section id="top" className="bg-brand-sage text-brand-dark">
       <div className="mx-auto max-w-5xl px-4 pb-16 pt-16 text-center sm:px-6 sm:pb-20 sm:pt-20 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-olive">
           Manufacturer &middot; Exporter &middot; Wholesale Supplier
@@ -14,17 +14,17 @@ export default function Hero() {
         <h1 className="mt-4 font-display text-4xl font-medium leading-tight sm:text-5xl lg:text-6xl">
           Enhance Your Formulations with Nature&rsquo;s Best
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-balance text-base text-brand-cream/80 sm:text-lg">
+       <p className="mx-auto mt-5 max-w-2xl text-balance text-base text-brand-dark/75 sm:text-lg">
           Seshadri Botanicals is a trusted manufacturer and exporter of premium
           essential oils, carrier oils and botanical extracts &mdash; now
           expanded into specialty chemicals and dehydrated food ingredients.
           Nature&rsquo;s purity, delivered to global industries with uncompromising quality.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link to="/shop" className="w-full rounded-full bg-brand-olive px-7 py-3 text-sm font-medium text-brand-dark transition-colors hover:bg-brand-cream sm:w-auto">
+         <Link to="/shop" className="w-full rounded-full bg-brand-olive px-7 py-3 text-sm font-medium text-brand-cream transition-colors hover:bg-brand-olive-dark sm:w-auto">
             Browse Our Products
           </Link>
-          <Link to="/contact" className="w-full rounded-full border border-brand-cream/30 px-7 py-3 text-sm font-medium text-brand-cream transition-colors hover:border-brand-cream sm:w-auto">
+         <Link to="/contact" className="w-full rounded-full border border-brand-dark/30 px-7 py-3 text-sm font-medium text-brand-dark transition-colors hover:border-brand-dark sm:w-auto">
             Request a Quote
           </Link>
         </div>

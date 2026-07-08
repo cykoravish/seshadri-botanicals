@@ -10,7 +10,7 @@ const SELECTIONS = [
 
 export default function PremiumSelections() {
   return (
-    <section className="bg-brand-dark py-16 text-brand-cream sm:py-20">
+    <section className="bg-brand-sage py-16 text-brand-dark sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl font-medium sm:text-4xl">Discover Our Premium Selections</h2>
         <div className="mt-10 flex flex-col gap-10">
@@ -19,7 +19,7 @@ export default function PremiumSelections() {
               <img src={item.image} alt={item.name} className="aspect-video w-full rounded-xl object-cover md:aspect-4/3 md:w-72 md:shrink-0" loading="lazy" />
               <div>
                 <h3 className="font-display text-xl font-medium sm:text-2xl">{item.name}</h3>
-                <p className="mt-3 max-w-xl text-brand-cream/80">{item.description}</p>
+            <p className="mt-3 max-w-xl text-brand-dark/75">{item.description}</p>
               </div>
             </div>
           ))}

@@ -3,53 +3,19 @@ import { Sprout, Target, Eye, ShieldCheck, Leaf, Lightbulb, Users } from "lucide
 import aboutHero from "../assets/images/about-hero.webp";
 
 const VALUES = [
-  {
-    icon: ShieldCheck,
-    title: "Quality",
-    description:
-      "We never compromise on quality. Every batch is produced and evaluated with precision to ensure consistency, purity and customer satisfaction.",
-  },
-  {
-    icon: Leaf,
-    title: "Integrity",
-    description:
-      "Honesty, transparency and ethical business practices form the foundation of every relationship we build.",
-  },
-  {
-    icon: Sprout,
-    title: "Sustainability",
-    description:
-      "We promote responsible sourcing, environmental stewardship and long-term partnerships that support both communities and nature.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "We continuously improve our manufacturing processes, product portfolio and customer solutions to meet evolving market needs.",
-  },
-  {
-    icon: Users,
-    title: "Customer Commitment",
-    description:
-      "Our customers are at the centre of everything we do — dependable products, responsive service and long-term value.",
-  },
+  { icon: ShieldCheck, title: "Quality", description: "We never compromise on quality. Every batch is produced and evaluated with precision to ensure consistency, purity and customer satisfaction." },
+  { icon: Leaf, title: "Integrity", description: "Honesty, transparency and ethical business practices form the foundation of every relationship we build." },
+  { icon: Sprout, title: "Sustainability", description: "We promote responsible sourcing, environmental stewardship and long-term partnerships that support both communities and nature." },
+  { icon: Lightbulb, title: "Innovation", description: "We continuously improve our manufacturing processes, product portfolio and customer solutions to meet evolving market needs." },
+  { icon: Users, title: "Customer Commitment", description: "Our customers are at the centre of everything we do — dependable products, responsive service and long-term value." },
 ];
 
-const REGIONS = [
-  "North America",
-  "Europe",
-  "Middle East",
-  "Southeast Asia",
-  "Australia",
-  "Africa",
-  "Latin America",
-];
+const REGIONS = ["North America", "Europe", "Middle East", "Southeast Asia", "Australia", "Africa", "Latin America"];
 
 export default function About() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-brand-dark text-brand-cream">
+      <section className="bg-brand-sage text-brand-dark">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-2 lg:px-8">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-olive">
@@ -58,7 +24,7 @@ export default function About() {
             <h1 className="mt-4 font-display text-4xl font-medium leading-tight sm:text-5xl">
               About Seshadri Botanicals
             </h1>
-            <p className="mt-5 text-brand-cream/80">
+            <p className="mt-5 text-brand-dark/75">
               Seshadri Botanicals is an India-based manufacturer and exporter
               specializing in premium essential oils, carrier oils, botanical
               extracts and floral waters &mdash; and, more recently,
@@ -70,7 +36,7 @@ export default function About() {
             </p>
             <Link
               to="/contact"
-              className="mt-6 inline-block rounded-full bg-brand-olive px-7 py-3 text-sm font-medium text-brand-dark transition-colors hover:bg-brand-cream"
+              className="mt-6 inline-block rounded-full bg-brand-olive px-7 py-3 text-sm font-medium text-brand-cream transition-colors hover:bg-brand-olive-dark"
             >
               Get in Touch
             </Link>
@@ -84,7 +50,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Who we are */}
       <section className="bg-brand-cream py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-medium sm:text-4xl">Who We Are</h2>
@@ -107,22 +72,21 @@ export default function About() {
         </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="bg-brand-dark py-16 text-brand-cream sm:py-20">
+      <section className="bg-brand-cream py-16 sm:py-20">
         <div className="mx-auto grid max-w-5xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+          <div className="rounded-2xl border border-brand-dark/10 bg-white/50 p-8">
             <Eye className="h-7 w-7 text-brand-olive" strokeWidth={1.5} aria-hidden="true" />
             <h3 className="mt-4 font-display text-2xl font-medium">Our Vision</h3>
-            <p className="mt-3 text-brand-cream/75">
+            <p className="mt-3 text-brand-dark/70">
               To become one of the world&rsquo;s most respected manufacturers
               and exporters of botanical ingredients by delivering exceptional
               quality, sustainable solutions and trusted partnerships.
             </p>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+          <div className="rounded-2xl border border-brand-dark/10 bg-white/50 p-8">
             <Target className="h-7 w-7 text-brand-olive" strokeWidth={1.5} aria-hidden="true" />
             <h3 className="mt-4 font-display text-2xl font-medium">Our Mission</h3>
-            <p className="mt-3 text-brand-cream/75">
+            <p className="mt-3 text-brand-dark/70">
               To provide natural ingredients that consistently exceed customer
               expectations while promoting sustainable business practices and
               continuous innovation across all three of our divisions.
@@ -131,7 +95,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Core values */}
       <section className="bg-brand-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-medium sm:text-4xl">Our Core Values</h2>
@@ -147,11 +110,10 @@ export default function About() {
         </div>
       </section>
 
-      {/* Global presence */}
-      <section className="bg-brand-dark py-16 text-brand-cream sm:py-20">
+      <section className="bg-brand-sage py-16 text-brand-dark sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-medium sm:text-4xl">Our Global Presence</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-brand-cream/80">
+          <p className="mx-auto mt-4 max-w-2xl text-brand-dark/75">
             We proudly supply botanical ingredients, specialty chemicals and
             dehydrated foods to businesses across international markets.
           </p>
@@ -159,7 +121,7 @@ export default function About() {
             {REGIONS.map((region) => (
               <span
                 key={region}
-               className="rounded-full border border-brand-cream/20 bg-white/10 px-4 py-2 text-sm font-medium"
+                className="rounded-full border border-brand-dark/15 bg-white/50 px-4 py-2 text-sm font-medium"
               >
                 {region}
               </span>
