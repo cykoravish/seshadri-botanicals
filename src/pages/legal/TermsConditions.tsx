@@ -57,7 +57,7 @@ export default function TermsConditions() {
       <h2>Contact</h2>
       <p>
         Questions about these terms can be sent to{" "}
-        <a href="mailto:info@seshadribotanicals.com">info@seshadribotanicals.com</a>.
+        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

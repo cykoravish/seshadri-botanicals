@@ -69,12 +69,12 @@ export default function Footer() {
             <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Contact</p>
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
               <li>
-                <a href="mailto:info@seshadribotanicals.com" className="hover:underline">
-                  info@seshadribotanicals.com
+                <a href="mailto:seshadribotanicals@gmail.com" className="hover:underline">
+                  seshadribotanicals@gmail.com
                 </a>
               </li>
-              <li>+91 XXXXX XXXXX</li>
-              <li>India</li>
+              <li>+91 9398622546</li>
+              <li>5/242, Kilchinpet, Adoni - 518301 , India</li>
             </ul>
           </div>
 

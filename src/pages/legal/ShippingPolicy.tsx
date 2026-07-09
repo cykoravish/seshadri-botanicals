@@ -42,7 +42,7 @@ export default function ShippingPolicy() {
       <h2>Contact</h2>
       <p>
         For shipping questions on a specific order, contact{" "}
-        <a href="mailto:info@seshadribotanicals.com">info@seshadribotanicals.com</a>.
+        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

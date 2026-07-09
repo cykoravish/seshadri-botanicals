@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
       <p>
         You may request access to, correction of, or deletion of any personal
         information you have submitted to us by emailing{" "}
-        <a href="mailto:info@seshadribotanicals.com">info@seshadribotanicals.com</a>.
+        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
       </p>
 
       <h2>Changes to This Policy</h2>
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
       <h2>Contact Us</h2>
       <p>
         Questions about this policy can be sent to{" "}
-        <a href="mailto:info@seshadribotanicals.com">info@seshadribotanicals.com</a>.
+        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

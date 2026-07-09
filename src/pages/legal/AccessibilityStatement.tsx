@@ -29,7 +29,7 @@ export default function AccessibilityStatement() {
       <p>
         If you encounter any accessibility barriers on this website, please
         let us know at{" "}
-        <a href="mailto:info@seshadribotanicals.com">info@seshadribotanicals.com</a>{" "}
+        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>{" "}
         &mdash; include the page and a description of the issue, and we will
         do our best to address it.
       </p>
