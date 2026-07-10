@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Leaf } from "lucide-react";
 
 const POLICY_LINKS = [
   { label: "Privacy Policy", to: "/privacy-policy" },
@@ -11,7 +10,13 @@ const POLICY_LINKS = [
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.75}
+      {...props}
+    >
       <rect x="3" y="3" width="18" height="18" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
@@ -21,7 +26,13 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
 
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.75}
+      {...props}
+    >
       <path d="M15 8h2V5h-2a4 4 0 0 0-4 4v2H9v3h2v7h3v-7h2.2l.8-3H14V9a1 1 0 0 1 1-1Z" />
     </svg>
   );
@@ -29,7 +40,13 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
 
 function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} {...props}>
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.75}
+      {...props}
+    >
       <rect x="3" y="3" width="18" height="18" rx="3" />
       <line x1="7.5" y1="10.5" x2="7.5" y2="16.5" />
       <circle cx="7.5" cy="7" r="0.6" fill="currentColor" />
@@ -45,31 +62,55 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link to="/" className="flex items-center gap-2 font-display text-lg font-medium">
-              <Leaf className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
+            <Link
+              to="/"
+              className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-dark"
+            >
+              <img
+                src="/logormbg.png"
+                alt="Seshadri Botanicals"
+                className="h-8 w-auto"
+              />
               Seshadri Botanicals
             </Link>
             <p className="mt-3 text-sm text-brand-dark/75">
               Nature&rsquo;s Purity. Global Quality. Trusted Worldwide.
             </p>
             <div className="mt-4 flex gap-4">
-              <a href="#" aria-label="Instagram" className="text-brand-dark/70 hover:text-brand-dark">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-brand-dark/70 hover:text-brand-dark"
+              >
                 <InstagramIcon className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Facebook" className="text-brand-dark/70 hover:text-brand-dark">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="text-brand-dark/70 hover:text-brand-dark"
+              >
                 <FacebookIcon className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-brand-dark/70 hover:text-brand-dark">
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="text-brand-dark/70 hover:text-brand-dark"
+              >
                 <LinkedinIcon className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Contact</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">
+              Contact
+            </p>
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
               <li>
-                <a href="mailto:seshadribotanicals@gmail.com" className="hover:underline">
+                <a
+                  href="mailto:seshadribotanicals@gmail.com"
+                  className="hover:underline"
+                >
                   seshadribotanicals@gmail.com
                 </a>
               </li>
@@ -79,16 +120,32 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Explore</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">
+              Explore
+            </p>
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
-              <li><Link to="/shop" className="hover:underline">Shop All</Link></li>
-              <li><Link to="/about" className="hover:underline">About</Link></li>
-              <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+              <li>
+                <Link to="/shop" className="hover:underline">
+                  Shop All
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:underline">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:underline">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">Policies</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark/60">
+              Policies
+            </p>
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/75">
               {POLICY_LINKS.map((policy) => (
                 <li key={policy.to}>
@@ -102,7 +159,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-brand-dark/15 pt-6 text-xs text-brand-dark/60">
-          &copy; {new Date().getFullYear()} Seshadri Botanicals. All rights reserved.
+          &copy; {new Date().getFullYear()} Seshadri Botanicals. All rights
+          reserved.
         </div>
       </div>
     </footer>

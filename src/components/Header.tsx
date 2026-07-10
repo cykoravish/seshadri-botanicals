@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
@@ -24,7 +24,11 @@ export default function Header() {
           to="/"
           className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-dark"
         >
-          <Leaf className="h-5 w-5 text-brand-olive" strokeWidth={1.75} aria-hidden="true" />
+          <img
+            src="/logormbg.png"
+            alt="Seshadri Botanicals"
+            className="h-8 w-auto"
+          />
           Seshadri Botanicals
         </Link>
 
@@ -61,13 +65,18 @@ export default function Header() {
           open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <nav aria-label="Primary" className="overflow-hidden border-t border-brand-dark/10 px-4 pb-6 pt-2">
+        <nav
+          aria-label="Primary"
+          className="overflow-hidden border-t border-brand-dark/10 px-4 pb-6 pt-2"
+        >
           <ul className="flex flex-col gap-1">
             {NAV_LINKS.map((link, i) => (
               <li
                 key={link.to}
                 className={`transition-all duration-300 ease-out ${
-                  open ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
+                  open
+                    ? "translate-y-0 opacity-100"
+                    : "-translate-y-1 opacity-0"
                 }`}
                 style={{ transitionDelay: open ? `${i * 50}ms` : "0ms" }}
               >
@@ -84,7 +93,9 @@ export default function Header() {
               className={`mt-2 transition-all duration-300 ease-out ${
                 open ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0"
               }`}
-              style={{ transitionDelay: open ? `${NAV_LINKS.length * 50}ms` : "0ms" }}
+              style={{
+                transitionDelay: open ? `${NAV_LINKS.length * 50}ms` : "0ms",
+              }}
             >
               <Link
                 to="/contact"
