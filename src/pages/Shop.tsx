@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import { DIVISIONS } from "../data/products";
+import { PRODUCT_GROUPS as DIVISIONS } from "../data/products";
+import Chips from "../components/Chips";
 
 export default function Shop() {
   const [activeId, setActiveId] = useState(DIVISIONS[0].id);
@@ -26,9 +27,7 @@ export default function Shop() {
           Shop All Products
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-brand-dark/70">
-          Browse our full catalogue across essential oils &amp; botanicals,
-          specialty chemicals, and dehydrated foods. All products are
-          available for bulk, wholesale and private-label supply.
+          Browse our portfolio of specialty and industrial chemicals. Not listed? We can source it for you &mdash; send us the product name, CAS number and specification.
         </p>
       </section>
 
@@ -71,24 +70,9 @@ export default function Shop() {
           >
             <p className="max-w-2xl text-brand-dark/75">{active.intro}</p>
 
-            <div className="mt-8 flex flex-col gap-8">
-              {active.categories.map((category) => (
-                <div key={category.name}>
-                  <h2 className="font-display text-xl font-medium">{category.name}</h2>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {category.items.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-brand-dark/15 bg-white/50 px-3.5 py-1.5 text-sm text-brand-dark/80"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+            <Chips items={active.items} className="mt-6" />
+            {active.note && <p className="mt-4 text-sm text-brand-dark/60">{active.note}</p>}
+                    </div>
         </div>
       </section>
     </>

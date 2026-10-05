@@ -11,8 +11,7 @@ export default function TermsConditions() {
       <h2>Use of This Website</h2>
       <p>
         This website is provided for informational purposes to present
-        Seshadri Botanicals&rsquo; product range across essential oils &amp;
-        botanicals, specialty chemicals, and dehydrated foods. It does not
+        Seshadri Chemicals&rsquo; product range across specialty chemicals, industrial chemicals, solvents, and food, pharma and cosmetic ingredients. It does not
         currently support online ordering or payment.
       </p>
 
@@ -34,13 +33,13 @@ export default function TermsConditions() {
       <h2>Intellectual Property</h2>
       <p>
         All content on this site, including text, images, and branding, is
-        the property of Seshadri Botanicals unless otherwise credited, and
+        the property of Seshadri Chemicals unless otherwise credited, and
         may not be reproduced without permission.
       </p>
 
       <h2>Limitation of Liability</h2>
       <p>
-        Seshadri Botanicals is not liable for indirect or consequential
+        Seshadri Chemicals is not liable for indirect or consequential
         losses arising from use of this website, to the fullest extent
         permitted by law.
       </p>
@@ -57,7 +56,7 @@ export default function TermsConditions() {
       <h2>Contact</h2>
       <p>
         Questions about these terms can be sent to{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <PolicyLayout title="Privacy Policy" updated="July 2026">
       <p>
-        Seshadri Botanicals (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) respects your
+        Seshadri Chemicals (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) respects your
         privacy. This policy explains what information we collect through this
         website and how we use it.
       </p>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
       <p>
         You may request access to, correction of, or deletion of any personal
         information you have submitted to us by emailing{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>.
       </p>
 
       <h2>Changes to This Policy</h2>
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
       <h2>Contact Us</h2>
       <p>
         Questions about this policy can be sent to{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

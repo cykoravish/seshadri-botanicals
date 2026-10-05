@@ -4,7 +4,7 @@ export default function AccessibilityStatement() {
   return (
     <PolicyLayout title="Accessibility Statement" updated="July 2026">
       <p>
-        Seshadri Botanicals is committed to ensuring digital accessibility
+        Seshadri Chemicals is committed to ensuring digital accessibility
         for people of all abilities. We are continually improving the user
         experience for everyone and applying relevant accessibility
         standards.
@@ -29,7 +29,7 @@ export default function AccessibilityStatement() {
       <p>
         If you encounter any accessibility barriers on this website, please
         let us know at{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>{" "}
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>{" "}
         &mdash; include the page and a description of the issue, and we will
         do our best to address it.
       </p>

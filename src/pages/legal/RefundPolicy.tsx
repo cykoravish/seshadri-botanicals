@@ -33,7 +33,7 @@ export default function RefundPolicy() {
       <h2>How to Request a Refund or Replacement</h2>
       <p>
         Contact our team at{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>{" "}
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>{" "}
         with your order details and supporting documentation, and we will
         review your request promptly.
       </p>

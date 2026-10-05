@@ -4,8 +4,8 @@ export default function ShippingPolicy() {
   return (
     <PolicyLayout title="Shipping Policy" updated="July 2026">
       <p>
-        Seshadri Botanicals supplies customers worldwide across essential
-        oils &amp; botanicals, specialty chemicals, and dehydrated foods.
+        Seshadri Chemicals supplies customers worldwide across specialty
+        chemicals, industrial chemicals, solvents, and food, pharma and cosmetic ingredients.
         Shipping terms are agreed on a per-order basis and summarized below.
       </p>
 
@@ -42,7 +42,7 @@ export default function ShippingPolicy() {
       <h2>Contact</h2>
       <p>
         For shipping questions on a specific order, contact{" "}
-        <a href="mailto:seshadribotanicals@gmail.com">seshadribotanicals@gmail.com</a>.
+        <a href="mailto:seshadriechemicals@gmail.com">seshadriechemicals@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

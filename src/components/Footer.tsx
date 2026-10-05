@@ -67,14 +67,14 @@ export default function Footer() {
               className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-dark"
             >
               <img
-                src="/logormbg.png"
-                alt="Seshadri Botanicals"
-                className="h-8 w-auto"
+                src="/logo.png"
+                alt="Seshadri Chemicals"
+                className="h-10 w-10"
               />
-              Seshadri Botanicals
+              Seshadri Chemicals
             </Link>
             <p className="mt-3 text-sm text-brand-dark/75">
-              Nature&rsquo;s Purity. Global Quality. Trusted Worldwide.
+              A Division of Seshadri Trading Company. Reliable Supply. Consistent Quality. Global Reach.
             </p>
             <div className="mt-4 flex gap-4">
               <a
@@ -108,10 +108,10 @@ export default function Footer() {
             <ul className="mt-3 flex flex-col gap-2 text-sm text-brand-dark/85">
               <li>
                 <a
-                  href="mailto:seshadribotanicals@gmail.com"
+                  href="mailto:seshadriechemicals@gmail.com"
                   className="hover:underline"
                 >
-                  seshadribotanicals@gmail.com
+                  seshadriechemicals@gmail.com
                 </a>
               </li>
               <li>+91 9398622546</li>
@@ -159,7 +159,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-brand-dark/15 pt-6 text-xs text-brand-dark/60">
-          &copy; {new Date().getFullYear()} Seshadri Botanicals. All rights
+          &copy; {new Date().getFullYear()} Seshadri Chemicals. All rights
           reserved.
         </div>
       </div>

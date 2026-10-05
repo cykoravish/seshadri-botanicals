@@ -1,5 +1,6 @@
 import { useState, useRef, type FormEvent } from "react";
 import { Mail, Clock } from "lucide-react";
+import { CONTACT_EMAIL } from "../data/products";
 import contactChamomile from "../assets/images/contact-chamomile.webp";
 
 export default function ContactSection() {
@@ -21,7 +22,7 @@ export default function ContactSection() {
       `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:Seshadribotanicals@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
 
     form.reset();
     setSubmitted(true);
@@ -35,7 +36,7 @@ export default function ContactSection() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:gap-14 lg:px-8">
         <img
           src={contactChamomile}
-          alt="Chamomile flowers, close up"
+          alt="Seshadri Chemicals"
           className="aspect-4/3 w-full rounded-xl object-cover md:aspect-auto md:h-full"
           loading="lazy"
         />
@@ -44,17 +45,16 @@ export default function ContactSection() {
             Connect with Us
           </h2>
           <p className="mt-3 max-w-md text-brand-dark/70">
-            Have questions or need bulk pricing? Reach out to Seshadri
-            Botanicals for inquiries about any of our products or services.
+            Have a requirement or need bulk pricing? Send us the product name, CAS number, specification, application, quantity and destination.
           </p>
           <div className="mt-6 flex flex-col gap-3 text-sm text-brand-dark/80">
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-brand-olive" aria-hidden="true" />
               <a
-                href="mailto:seshadribotanicals@gmail.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="hover:text-brand-dark"
               >
-                Seshadribotanicals@gmail.com
+                {CONTACT_EMAIL}
               </a>
             </div>
             <div className="flex items-center gap-2">

@@ -25,11 +25,11 @@ export default function Header() {
           className="flex items-center gap-2 font-display text-lg font-medium tracking-wide text-brand-dark"
         >
           <img
-            src="/logormbg.png"
-            alt="Seshadri Botanicals"
-            className="h-8 w-auto"
+            src="/logo.png"
+            alt="Seshadri Chemicals"
+            className="h-10 w-10"
           />
-          Seshadri Botanicals
+          Seshadri Chemicals
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
